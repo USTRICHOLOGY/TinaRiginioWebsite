@@ -10,7 +10,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
 
 /* Hair growth cycle buttons */
 .phase-btn {
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Jost', sans-serif;
   display: flex; flex-direction: column; align-items: center; gap: 10px;
   padding: 20px 8px; min-height: 44px; border-radius: 22px; cursor: pointer;
   color: #FFFFFF; background: transparent; border: 1px solid #2A2A30;
@@ -34,8 +34,8 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
 .ba-card.is-live .ba-after { transition: none; }
 .ba-card.is-live .ba-line { transition: opacity 0.2s; }
 .ba-tag {
-  position: absolute; top: 16px; font-family: 'IBM Plex Mono', monospace; font-size: 11px;
-  letter-spacing: 0.18em; padding: 7px 11px; border-radius: 999px;
+  position: absolute; top: 16px; font-family: 'Jost', sans-serif; font-weight: 600; font-size: 11px;
+  letter-spacing: 0.1em; padding: 7px 11px; border-radius: 999px;
 }
 .ba-tag-after { left: 16px; background: #A9D9F2; color: #0B0B0D; }
 .ba-tag-before { right: 16px; background: #0B0B0D; color: #FFFFFF; }
@@ -53,3 +53,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
   .hero-img { object-position: 22% center !important; }
   .hero-header { background: rgba(255,255,255,0.88); }
 }
+
+/* Type: Marcellus headings, Jost text */
+h1, h2 { letter-spacing: -0.005em !important; line-height: 1.06 !important; }
+.hero-links a.chip { background: rgba(255,255,255,0.88); padding: 10px 16px; border-radius: 999px; }
