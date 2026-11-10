@@ -15,10 +15,10 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div style="font-family: 'Montserrat', sans-serif; color: #FFFFFF; background: #0B0B0D; width: 100%; overflow-x: hidden">
+<div style="font-family: 'Montserrat', sans-serif; color: #FFFFFF; background: #0B0B0D; width: 100%; overflow-x: clip">
 
 <!-- TOP BAR + HERO (option A) -->
-<section style="position: relative; overflow: hidden; background: #F2F6F8; color: #0B0B0D; min-height: 860px; display: flex; flex-direction: column">
+<section style="position: relative; overflow: clip; background: #F2F6F8; color: #0B0B0D; min-height: 860px; display: flex; flex-direction: column">
 <img class="hero-img" src="assets/hero.jpg" alt="Glossy, healthy dark hair flowing in soft waves against a light blue sky" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: right center">
 <header class="hero-header" style="position: relative; max-width: 1440px; width: 100%; margin: 0 auto; box-sizing: border-box; padding: 28px 72px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px">
 <div style="display: flex; align-items: center; gap: 12px">
@@ -55,14 +55,17 @@
 <!-- STORY -->
 <section id="story" style="background: #F4F8FA; color: #0B0B0D">
 <div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-direction: column; gap: 72px">
-<div style="display: flex; flex-direction: column; gap: 22px; max-width: 1080px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px; max-width: 1080px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #1D5F80"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>BEYOND THE HAIR &#183; MEET TINA</span>
 <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(44px, 5.8vw, 88px); line-height: 1; letter-spacing: -0.02em">"Hair loss is never just about losing hair. <span style="color: #1D5F80">It's about losing a part of how you recognize yourself.</span>"</h2>
 </div>
 <div style="display: flex; flex-wrap: wrap; gap: 64px">
 <div style="flex: 1 1 360px; min-width: 0; max-width: 440px; display: flex; flex-direction: column; gap: 28px">
-<div style="position: relative; aspect-ratio: 4 / 5; border-radius: 6px; background: #DCEBF2; overflow: hidden">
-<img src="assets/tina-riginio.jpg" alt="Tina Riginio, Certified Clinical Trichologist, smiling in her white trichologist coat" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block">
+<div class="rv" style="position: relative; margin: 0 28px 28px 0">
+<div aria-hidden="true" style="position: absolute; top: 28px; left: 28px; right: -28px; bottom: -28px; background: #A9D9F2; border-radius: 6px"></div>
+<div style="position: relative; aspect-ratio: 4 / 5; border-radius: 6px; background: #DCEBF2; overflow: clip">
+<img class="rv-zoom" src="assets/tina-riginio.jpg" alt="Tina Riginio, Certified Clinical Trichologist, smiling in her white trichologist coat" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center 30%; display: block">
+</div>
 </div>
 <div style="display: flex; flex-direction: column; border-top: 1px solid #CFD9DF">
 <div style="display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid #CFD9DF"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #4A5A62">CREDENTIAL</span><span style="font-size: 15px; text-align: right">Certified Clinical Trichologist</span></div>
@@ -71,16 +74,26 @@
 </div>
 </div>
 <div style="flex: 1 1 560px; min-width: 0; display: flex; flex-direction: column; gap: 26px; font-size: 18px; line-height: 1.8; color: #34343A">
-<p style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 28px; line-height: 1.4; color: #0B0B0D">For nearly 30 years, I mastered the hows of hair: cutting, coloring, styling, extensions and everything in between. Eventually I realized there was something far more important I wanted to understand. <span>The whys.</span></p>
-<p style="margin: 0">Why were so many men and women experiencing hair loss? Why did it seem to be happening more often? And what could I do to make a meaningful difference?</p>
-<p style="margin: 0">My connection to hair loss is deeply personal. My mother battled cancer throughout my life, and I knew her without hair for more years than I knew her with it. Watching her journey, I saw the emotional impact hair loss has on a person's confidence, identity and well-being.</p>
-<p style="margin: 0">I could transform someone's appearance behind the salon chair, but I wanted to do more: understand the underlying factors, provide education, and help people through a journey that can feel overwhelming and isolating. That passion led me to become a Certified Clinical Trichologist.</p>
-<p style="margin: 0">Today I combine nearly three decades of hands-on experience with specialized education in hair and scalp health. Whether you're dealing with gradual thinning, excessive shedding, alopecia, hormonal changes, or hair loss connected to illness or medical treatment, my approach begins with listening, understanding and education. There is no one-size-fits-all answer, and you'll feel supported every step of the way.</p>
-<div style="margin-top: 10px; padding: 32px 36px; background: #0B0B0D; color: #FFFFFF; border-radius: 6px; display: flex; flex-direction: column; gap: 14px">
-<span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #A9D9F2">MY MISSION</span>
-<span style="font-family: 'Montserrat', sans-serif; font-size: 26px; line-height: 1.4">To help people understand the why behind their hair loss, find a path forward, and regain a sense of confidence and control. <span style="color: #A9D9F2">No one should have to navigate it feeling alone.</span></span>
+<p class="rv" style="margin: 0; font-family: 'Montserrat', sans-serif; font-size: 28px; line-height: 1.4; color: #0B0B0D">For nearly 30 years, I mastered the hows of hair: cutting, coloring, styling, extensions and everything in between. Eventually I realized there was something far more important I wanted to understand. <span>The whys.</span></p>
+<p class="rv" style="margin: 0">Why were so many men and women experiencing hair loss? Why did it seem to be happening more often? And what could I do to make a meaningful difference?</p>
+<p class="rv" style="margin: 0">My connection to hair loss is deeply personal. My mother battled cancer throughout my life, and I knew her without hair for more years than I knew her with it. Watching her journey, I saw the emotional impact hair loss has on a person's confidence, identity and well-being.</p>
+<p class="rv" style="margin: 0">I could transform someone's appearance behind the salon chair, but I wanted to do more: understand the underlying factors, provide education, and help people through a journey that can feel overwhelming and isolating. That passion led me to become a Certified Clinical Trichologist.</p>
+<p class="rv" style="margin: 0">Today I combine nearly three decades of hands-on experience with specialized education in hair and scalp health. Whether you're dealing with gradual thinning, excessive shedding, alopecia, hormonal changes, or hair loss connected to illness or medical treatment, my approach begins with listening, understanding and education. There is no one-size-fits-all answer, and you'll feel supported every step of the way.</p>
 </div>
 </div>
+</div>
+</section>
+
+<!-- MISSION BAND -->
+<section style="position: relative; overflow: clip; background: #DCEBF2; color: #0B0B0D; min-height: 640px; display: flex; align-items: center">
+<img class="rv-zoom" src="assets/mission.jpg" alt="Long, healthy brunette hair being gently combed in a bright, pale blue room" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 75% center">
+<div class="band-wash" aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(90deg, rgba(244,248,250,0.92) 0%, rgba(244,248,250,0.75) 38%, rgba(244,248,250,0) 64%)"></div>
+<div style="position: relative; max-width: 1320px; width: 100%; margin: 0 auto; padding: 120px 24px; box-sizing: border-box">
+<div class="rv" style="max-width: 620px; display: flex; flex-direction: column; gap: 24px">
+<span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #1D5F80"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>MY MISSION</span>
+<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; color: #0B0B0D">No one should navigate hair loss <span style="color: #1D5F80">feeling alone.</span></h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.75; color: #26262C">To help people understand the why behind their hair loss, find a path forward, and regain a sense of confidence and control.</p>
+<a href="#book" style="align-self: flex-start; background: #0B0B0D; color: #FFFFFF; text-decoration: none; padding: 17px 30px; border-radius: 999px; font-weight: 600; font-size: 16px">Book a consultation</a>
 </div>
 </div>
 </section>
@@ -88,26 +101,26 @@
 <!-- CANCER CARE -->
 <section style="background: #A9D9F2; color: #0B0B0D">
 <div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-direction: column; gap: 64px">
-<div style="display: flex; flex-direction: column; gap: 22px; max-width: 900px">
+<div class="rv" style="display: flex; flex-direction: column; gap: 22px; max-width: 900px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>CARE THROUGH CANCER TREATMENT</span>
 <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(44px, 5.6vw, 84px); line-height: 1; letter-spacing: -0.02em">Like the moon, hair has phases. <span>Tina is there for every one.</span></h2>
 <p style="margin: 0; max-width: 640px; font-size: 18px; line-height: 1.75; color: #1C2A31">Private appointments, a quiet room, and a trichologist who has sat on both sides of this. Tina works alongside your oncology team, never in place of it.</p>
 </div>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2px; background: #0B0B0D; border: 2px solid #0B0B0D">
-<div style="background: #A9D9F2; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px">
-<svg width="72" height="72" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="#0B0B0D"></circle><circle cx="11" cy="20" r="16" fill="#A9D9F2"></circle></svg>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; align-items: start">
+<div class="rv" style="background: #FFFFFF; border-radius: 6px; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 48px -28px rgba(11,11,13,0.35)">
+<svg width="72" height="72" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="#0B0B0D"></circle><circle cx="11" cy="20" r="16" fill="#FFFFFF"></circle></svg>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em">WANING &#183; BEFORE TREATMENT</span>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 32px; line-height: 1.1">Prepare with care</span>
 <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #1C2A31">A calm first conversation about what to expect, a gentle shave or short cut on your terms, and a scalp routine started early.</p>
 </div>
-<div style="background: #A9D9F2; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px">
+<div class="rv stagger-2" style="background: #FFFFFF; border-radius: 6px; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 48px -28px rgba(11,11,13,0.35)">
 <svg width="72" height="72" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="15.3" fill="none" stroke="#0B0B0D" stroke-width="1.4"></circle></svg>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em">NEW MOON &#183; DURING</span>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 32px; line-height: 1.1">Protect and soothe</span>
 <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #1C2A31">Comfort for a dry, tender scalp, simple products that are kind to sensitive skin, and help with wigs and head coverings.</p>
 </div>
-<div style="background: #A9D9F2; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px">
-<svg width="72" height="72" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="#0B0B0D"></circle><circle cx="30" cy="20" r="16" fill="#A9D9F2"></circle></svg>
+<div class="rv stagger-3" style="background: #FFFFFF; border-radius: 6px; padding: 40px 34px; display: flex; flex-direction: column; gap: 18px; box-shadow: 0 24px 48px -28px rgba(11,11,13,0.35)">
+<svg width="72" height="72" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="16" fill="#0B0B0D"></circle><circle cx="30" cy="20" r="16" fill="#FFFFFF"></circle></svg>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em">WAXING &#183; AFTER</span>
 <span style="font-family: 'Montserrat', sans-serif; font-size: 32px; line-height: 1.1">Welcome it back</span>
 <p style="margin: 0; font-size: 16px; line-height: 1.7; color: #1C2A31">A regrowth plan for when hair returns, with scalp treatments and laser sessions once your doctor gives the all clear.</p>
@@ -119,12 +132,12 @@
 <!-- GROWTH CYCLE (interactive) -->
 <section style="background: #0B0B0D">
 <div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: center">
-<div style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
+<div class="rv" style="flex: 1 1 440px; min-width: 0; display: flex; flex-direction: column; gap: 22px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #A9D9F2"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>THE LUNAR LIFE OF A HAIR</span>
 <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(42px, 5vw, 72px); line-height: 1.02; letter-spacing: -0.02em">Every strand runs on <span style="color: #A9D9F2">its own cycle.</span></h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #C9C9D0">Understanding where your hairs are in that cycle is how Tina finds the cause of shedding, instead of guessing. Tap a phase.</p>
 </div>
-<div style="flex: 1 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+<div class="rv" style="flex: 1 1 600px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
 <div class="phase-grid" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px">
 <button type="button" class="phase-btn" aria-pressed="true" data-name="Anagen" data-length="FULL MOON · 2 TO 7 YEARS" data-body="The growing phase. Around 85 to 90 percent of a healthy scalp is here at any moment, with each hair lengthening about a centimeter a month."><svg width="56" height="56" viewBox="0 0 40 40" aria-hidden="true" style="background: #0B0B0D; border-radius: 999px"><circle cx="20" cy="20" r="15" fill="#A9D9F2"></circle><circle cx="60" cy="20" r="15" fill="#0B0B0D"></circle><circle class="ring" cx="20" cy="20" r="15" fill="none" stroke-width="1"></circle></svg><span style="font-family: 'Montserrat', sans-serif; font-size: 22px">Anagen</span><span style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; opacity: 0.75">GROWTH</span></button>
 <button type="button" class="phase-btn" aria-pressed="false" data-name="Catagen" data-length="WANING · ABOUT 2 TO 3 WEEKS" data-body="A short pause. The follicle shrinks and the hair detaches from the blood supply that fed it."><svg width="56" height="56" viewBox="0 0 40 40" aria-hidden="true" style="background: #0B0B0D; border-radius: 999px"><circle cx="20" cy="20" r="15" fill="#A9D9F2"></circle><circle cx="8" cy="20" r="15" fill="#0B0B0D"></circle><circle class="ring" cx="20" cy="20" r="15" fill="none" stroke-width="1"></circle></svg><span style="font-family: 'Montserrat', sans-serif; font-size: 22px">Catagen</span><span style="font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; opacity: 0.75">TRANSITION</span></button>
@@ -144,18 +157,20 @@
 
 <!-- SERVICES -->
 <section style="background: #0B0B0D; border-top: 1px solid #1E1E23">
-<div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-direction: column; gap: 56px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 24px">
-<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(44px, 5.6vw, 84px); line-height: 1; letter-spacing: -0.02em">Everything <span style="color: #A9D9F2">scalp.</span></h2>
+<div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-wrap: wrap; gap: 64px; align-items: flex-start">
+<div class="svc-aside rv" style="flex: 1 1 340px; min-width: 0; display: flex; flex-direction: column; gap: 24px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #A8A8B0"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>SIX WAYS TINA CAN HELP</span>
+<h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400">Everything <span style="color: #A9D9F2">scalp.</span></h2>
+<p style="margin: 0; font-size: 17px; line-height: 1.75; color: #B8B8C0">Every visit starts with a close look at your scalp, so the plan fits what is actually going on.</p>
+<a href="#book" style="align-self: flex-start; background: #A9D9F2; color: #0B0B0D; text-decoration: none; padding: 16px 28px; border-radius: 999px; font-weight: 600; font-size: 15px">Book a consultation</a>
 </div>
-<div style="display: flex; flex-direction: column">
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">01</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Scalp &amp; hair analysis</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">A magnified look at your scalp and strands to find the real cause before anything is recommended.</span></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">02</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Thinning &amp; shedding</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Widening parts, receding hairlines, postpartum and stress shedding, for women and men.</span></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">03</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Scalp conditions</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Flaking, itching, oiliness, dryness, buildup and sensitivity, with a doctor referral when it needs medical care.</span></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">04</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Cancer-related hair loss</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Private, compassionate care before, during and after treatment.</span></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">05</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Laser hair therapy</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Full-scalp, low-level laser sessions in the salon, built into your plan.</span></div>
-<div style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 24px; padding: 30px 0; border-top: 1px solid #2A2A30; border-bottom: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">06</span><span style="flex: 1 1 380px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Bella Luna salon</span><span style="flex: 1 1 360px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Cut, color and styling from someone who knows what your scalp needs. [CONFIRM SALON MENU]</span></div>
+<div style="flex: 2 1 560px; min-width: 0; display: flex; flex-direction: column">
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">01</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Scalp &amp; hair analysis</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">A magnified look at your scalp and strands to find the real cause before anything is recommended.</span></div>
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">02</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Thinning &amp; shedding</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Widening parts, receding hairlines, postpartum and stress shedding, for women and men.</span></div>
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">03</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Scalp conditions</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Flaking, itching, oiliness, dryness, buildup and sensitivity, with a doctor referral when it needs medical care.</span></div>
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">04</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Cancer-related hair loss</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Private, compassionate care before, during and after treatment.</span></div>
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">05</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Laser hair therapy</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Full-scalp, low-level laser sessions in the salon, built into your plan.</span></div>
+<div class="rv" style="display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 24px; padding: 28px 0; border-top: 1px solid #2A2A30; border-bottom: 1px solid #2A2A30"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; color: #A9D9F2; width: 64px">06</span><span style="flex: 1 1 300px; font-family: 'Montserrat', sans-serif; font-weight: 300; text-transform: uppercase; letter-spacing: 0.06em; font-size: clamp(22px, 2.4vw, 32px)">Bella Luna salon</span><span class="svc-row-desc" style="flex: 1 1 100%; padding-left: 88px; font-size: 16px; line-height: 1.7; color: #B8B8C0">Cut, color and styling from someone who knows what your scalp needs. [CONFIRM SALON MENU]</span></div>
 </div>
 </div>
 </section>
@@ -164,24 +179,18 @@
 <section style="background: #0E1418">
 <div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 64px">
 <div style="flex: 1 1 520px; min-width: 0; display: flex; justify-content: center">
-<svg viewBox="0 0 560 520" style="width: 100%; max-width: 600px; height: auto" role="img" aria-label="Rings of laser light radiating down over the crown of a head">
-<g fill="none" stroke="#A9D9F2">
-<circle cx="280" cy="230" r="40" stroke-width="2"></circle>
-<circle cx="280" cy="230" r="78" stroke-width="1.6" opacity="0.75"></circle>
-<circle cx="280" cy="230" r="118" stroke-width="1.3" opacity="0.55"></circle>
-<circle class="tr-glow" cx="280" cy="230" r="160" stroke-width="1" opacity="0.4"></circle>
-<circle cx="280" cy="230" r="204" stroke-width="0.8" opacity="0.25" stroke-dasharray="2 6"></circle>
-</g>
-<g fill="#A9D9F2"><circle cx="280" cy="230" r="6"></circle><circle cx="202" cy="230" r="3"></circle><circle cx="358" cy="230" r="3"></circle><circle cx="280" cy="152" r="3"></circle><circle cx="225" cy="175" r="2.5"></circle><circle cx="335" cy="175" r="2.5"></circle><circle cx="225" cy="285" r="2.5"></circle><circle cx="335" cy="285" r="2.5"></circle></g>
-<g stroke="#A9D9F2" stroke-width="1.2" stroke-dasharray="2 7" opacity="0.7"><path d="M200 330 L186 420"></path><path d="M240 330 L234 410"></path><path d="M280 330 L280 404"></path><path d="M320 330 L326 410"></path><path d="M360 330 L374 420"></path></g>
-<path d="M140 520 C140 402 206 382 280 382 C354 382 420 402 420 520" fill="#0B0B0D" stroke="#FFFFFF" stroke-width="1.6"></path>
-</svg>
+<div class="rv" style="position: relative; width: 100%; max-width: 640px">
+<div style="position: relative; aspect-ratio: 5 / 4; border-radius: 6px; overflow: clip; background: #1A2328">
+<img class="rv-zoom" src="assets/laser-room.jpg" alt="A calm treatment room with a white chair beneath a full-coverage laser canopy" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 68% center; display: block">
 </div>
-<div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<span style="position: absolute; left: 20px; bottom: 20px; background: #A9D9F2; color: #0B0B0D; font-family: 'Montserrat', sans-serif; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; padding: 9px 14px; border-radius: 999px">IN-SALON LASER</span>
+</div>
+</div>
+<div class="rv" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #A9D9F2"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>THE LIGHT ROOM</span>
 <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(42px, 5vw, 72px); line-height: 1.02; letter-spacing: -0.02em">Sit back. <span style="color: #A9D9F2">Let the light do the work.</span></h2>
 <p style="margin: 0; font-size: 18px; line-height: 1.75; color: #C9D3D9">Tina's salon houses a full-coverage laser unit for low-level laser therapy. You relax beneath it while it bathes the entire scalp in light: no heat, no needles, no downtime.</p>
-<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #2A3338; border: 1px solid #2A3338; border-radius: 20px; overflow: hidden">
+<div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; background: #2A3338; border: 1px solid #2A3338; border-radius: 20px; overflow: clip">
 <div style="background: #0E1418; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #8FA0AA">COVERAGE</span><span style="font-size: 18px">Full scalp, every session</span></div>
 <div style="background: #0E1418; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #8FA0AA">FEELS LIKE</span><span style="font-size: 18px">Nothing at all</span></div>
 <div style="background: #0E1418; padding: 22px; display: flex; flex-direction: column; gap: 6px"><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #8FA0AA">SESSION</span><span style="font-size: 18px">[MINUTES]</span></div>
@@ -202,14 +211,14 @@
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #4A4A52">MOVE ACROSS AN IMAGE TO REVEAL</span>
 </div>
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px">
-<div class="ba-card"><img src="assets/before-after/p1-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p1-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p2-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p2-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p3-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p3-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p4-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p4-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p5-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p5-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p6-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p6-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p7-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p7-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
-<div class="ba-card"><img src="assets/before-after/p8-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p8-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p1-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p1-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p2-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p2-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p3-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p3-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p4-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p4-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p5-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p5-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p6-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p6-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p7-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p7-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
+<div class="ba-card rv"><img src="assets/before-after/p8-before.jpg" alt="Client scalp before working with Tina" loading="lazy" class="ba-img"><img src="assets/before-after/p8-after.jpg" alt="Client scalp after working with Tina" loading="lazy" class="ba-img ba-after"><div class="ba-line"></div><span class="ba-tag ba-tag-after">AFTER</span><span class="ba-tag ba-tag-before">BEFORE</span></div>
 </div>
 </div>
 </section>
@@ -217,7 +226,7 @@
 <!-- BOOK -->
 <section id="book" style="background: #0B0B0D">
 <div style="max-width: 1320px; margin: 0 auto; padding: 128px 24px; display: flex; flex-wrap: wrap; gap: 64px">
-<div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<div class="rv" style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
 <span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.12em; color: #A9D9F2"><svg width="13" height="13" viewBox="0 0 24 24" aria-hidden="true" style="display: inline-block; vertical-align: -1px; margin-right: 10px"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" fill="currentColor"></path></svg>BEGIN YOUR FIRST PHASE</span>
 <h2 style="margin: 0; font-family: 'Montserrat', sans-serif; font-weight: 400; font-size: clamp(48px, 6vw, 92px); line-height: 0.98; letter-spacing: -0.02em">Let's look <span style="color: #A9D9F2">closer.</span></h2>
 <p style="margin: 0; max-width: 460px; font-size: 18px; line-height: 1.75; color: #C9C9D0">Tell Tina a little about what you're noticing. She'll reach out personally to set up your consultation and scalp analysis.</p>
@@ -228,7 +237,7 @@
 <span><span style="font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #8A8A92; display: inline-block; width: 90px">FOLLOW</span><a href="https://www.instagram.com/bellalunasalon1">@bellalunasalon1</a></span>
 </div>
 </div>
-<form style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
+<form class="rv" style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 26px">
 <label style="display: flex; flex-direction: column; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #A8A8B0">YOUR NAME<input type="text" name="name" style="font-family: 'Montserrat', sans-serif; font-size: 26px; color: #FFFFFF; background: transparent; border: 0; border-bottom: 1px solid #4A4A52; padding: 8px 0"></label>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 26px">
 <label style="display: flex; flex-direction: column; gap: 10px; font-family: 'Montserrat', sans-serif; font-size: 13px; font-weight: 600; letter-spacing: 0.1em; color: #A8A8B0">EMAIL<input type="email" name="email" style="font-family: 'Montserrat', sans-serif; font-size: 26px; color: #FFFFFF; background: transparent; border: 0; border-bottom: 1px solid #4A4A52; padding: 8px 0"></label>

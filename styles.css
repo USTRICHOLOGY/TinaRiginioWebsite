@@ -60,3 +60,30 @@ h1 { font-size: clamp(34px, 4.4vw, 64px) !important; }
 h2 { font-size: clamp(28px, 3.6vw, 54px) !important; }
 h1 span, h2 span { font-weight: 400; }
 .hero-links a.chip { background: rgba(255,255,255,0.88); padding: 10px 16px; border-radius: 999px; }
+
+/* Motion: hero text eases in on load; sections rise and photos settle as you scroll to them (once, no loops) */
+@keyframes tr-rise { from { opacity: 0; transform: translateY(44px); } to { opacity: 1; transform: none; } }
+@keyframes tr-zoom { from { transform: scale(1.14); } to { transform: scale(1); } }
+@keyframes tr-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@media (prefers-reduced-motion: no-preference) {
+  .tr-heroText > * { animation: tr-in 0.9s cubic-bezier(.2,.7,.2,1) both; }
+  .tr-heroText > *:nth-child(2) { animation-delay: .12s; }
+  .tr-heroText > *:nth-child(3) { animation-delay: .24s; }
+  .tr-heroText > *:nth-child(4) { animation-delay: .36s; }
+  @supports (animation-timeline: view()) {
+    .rv { animation: tr-rise linear both; animation-timeline: view(); animation-range: entry 0% entry 45%; }
+    .rv-zoom { animation: tr-zoom linear both; animation-timeline: view(); animation-range: entry 0% cover 55%; }
+  }
+  /* Fallback for browsers without scroll-linked animation (set by script.js) */
+  .rv-js .rv { opacity: 0; transform: translateY(44px); transition: opacity .9s cubic-bezier(.2,.7,.2,1), transform .9s cubic-bezier(.2,.7,.2,1); }
+  .rv-js .rv.is-in { opacity: 1; transform: none; }
+  .rv-js .rv-zoom { transform: scale(1.1); transition: transform 1.6s cubic-bezier(.2,.7,.2,1); }
+  .rv-js .rv-zoom.is-in { transform: none; }
+}
+
+/* Layout helpers */
+@media (min-width: 900px) { .stagger-2 { margin-top: 56px; } .stagger-3 { margin-top: 112px; } }
+.svc-aside { position: sticky; top: 48px; }
+@media (max-width: 899px) { .svc-aside { position: static; } }
+@media (max-width: 600px) { .svc-row-desc { padding-left: 0 !important; } }
+@media (max-width: 760px) { .band-wash { background: rgba(244,248,250,0.86) !important; } }
