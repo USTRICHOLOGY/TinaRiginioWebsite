@@ -86,3 +86,4 @@ h2 { font-size: clamp(32px, 4vw, 60px) !important; }
 @media (max-width: 899px) { .svc-aside { position: static; } }
 @media (max-width: 600px) { .svc-row-desc { padding-left: 0 !important; } }
 @media (max-width: 760px) { .band-wash { background: rgba(244,248,250,0.86) !important; } }
+@media (min-width: 761px) { .band-img { left: auto !important; width: 52% !important; object-position: 72% 30% !important; } .band-wash { display: none; } }
