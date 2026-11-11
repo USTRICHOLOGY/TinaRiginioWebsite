@@ -54,11 +54,10 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
   .hero-header { background: rgba(255,255,255,0.88); }
 }
 
-/* Type: light spaced capitals for headings, Montserrat text */
-h1, h2 { text-transform: uppercase; font-weight: 300 !important; letter-spacing: 0.06em !important; line-height: 1.12 !important; }
-h1 { font-size: clamp(34px, 4.4vw, 64px) !important; }
-h2 { font-size: clamp(28px, 3.6vw, 54px) !important; }
-h1 span, h2 span { font-weight: 400; }
+/* Type: Playfair Display headings, Montserrat text */
+h1, h2 { font-weight: 500 !important; letter-spacing: -0.01em !important; line-height: 1.1 !important; }
+h1 { font-size: clamp(38px, 5vw, 76px) !important; }
+h2 { font-size: clamp(32px, 4vw, 60px) !important; }
 .hero-links a.chip { background: rgba(255,255,255,0.88); padding: 10px 16px; border-radius: 999px; }
 
 /* Motion: hero text eases in on load; sections rise and photos settle as you scroll to them (once, no loops) */
