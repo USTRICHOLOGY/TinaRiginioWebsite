@@ -50,14 +50,14 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
 }
 /* Hero: Tina in the treatment room */
 .hero-photo { position: absolute; top: 0; right: 0; bottom: 0; width: 56%; }
-.hero-fade { background: linear-gradient(90deg, #1F3550 0%, rgba(31,53,80,0.55) 18%, rgba(31,53,80,0) 40%); }
+.hero-fade { background: linear-gradient(90deg, #FFFFFF 0%, rgba(255,255,255,0.6) 18%, rgba(255,255,255,0) 40%); }
 @media (max-width: 900px) {
   .hero-photo { position: relative; width: 100%; height: 440px; order: 2; }
-  .hero-links a.chip { background: rgba(255,255,255,0.14); }
+  .hero-links a.chip { background: #F2F6F8; }
   .hero-header { order: 1; }
   .hero-body { order: 3; padding-top: 8px !important; padding-bottom: 64px !important; }
   .hero-stats { order: 4; }
-  .hero-fade { background: linear-gradient(180deg, rgba(31,53,80,0) 55%, #1F3550 100%); }
+  .hero-fade { background: linear-gradient(180deg, rgba(255,255,255,0) 55%, #FFFFFF 100%); }
 }
 @media (max-width: 760px) {
   .hero-header { padding: 20px 24px !important; }
@@ -69,7 +69,7 @@ a:focus-visible, button:focus-visible { outline: 2px solid #A9D9F2; outline-offs
 h1, h2 { font-weight: 500 !important; letter-spacing: -0.01em !important; line-height: 1.1 !important; }
 h1 { font-size: clamp(38px, 5vw, 76px) !important; }
 h2 { font-size: clamp(32px, 4vw, 60px) !important; }
-.hero-links a.chip { background: rgba(31,53,80,0.82); padding: 10px 16px; border-radius: 999px; }
+.hero-links a.chip { background: rgba(255,255,255,0.9); padding: 10px 16px; border-radius: 999px; }
 
 /* Motion: hero text eases in on load; sections rise and photos settle as you scroll to them (once, no loops) */
 @keyframes tr-rise { from { opacity: 0; transform: translateY(44px); } to { opacity: 1; transform: none; } }
